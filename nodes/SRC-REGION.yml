@@ -1,0 +1,63 @@
+steps:
+  REGION-6ba1f22e-7d2f-417b-82c1-4c40a250b1e6:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 69a6bbf5-0a50-4ecd-9a60-236f87ebeb39
+              stepCounter: 6ba1f22e-7d2f-417b-82c1-4c40a250b1e6
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6b4f32d4-e231-48ef-aa91-e0eed0a198fd
+              stepCounter: 6ba1f22e-7d2f-417b-82c1-4c40a250b1e6
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f07c253c-6593-4c9e-b307-db396b4f872e
+              stepCounter: 6ba1f22e-7d2f-417b-82c1-4c40a250b1e6
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 6ba1f22e-7d2f-417b-82c1-4c40a250b1e6
